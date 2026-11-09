@@ -65,3 +65,46 @@ Once you have completed both of the items above, you will need to submit the lin
 - [Make a ReadMe file Web-based Editor](https://www.makeareadme.com/)
 - [Draw.io Web-based diagramming tool](https://app.diagrams.net/)
 - [Creating Entity Relationship Diagrams using Draw.io](https://www.youtube.com/watch?v=lAtCySGDD48)
+
+
+PROPERTY
+Attributes: PropertyID (PK), PropertyName, Address, ShortDescription, LongDescription, Latitude, Longitude, MinimumRent, MaximumRent, ContactFirstName, ContactLastName, ContactEmail, ContactPhone, ClassificationID (FK).
+CLASSIFICATION
+Attributes: ClassificationID (PK), Title, Description.
+AMENITY
+Attributes: AmenityID (PK), Name, Description.
+PROPERTY_AMENITY
+Attributes: PropertyID (PK, FK), AmenityID (PK, FK).
+RENTER
+Attributes: RenterID (PK), FirstName, LastName, Email, Phone, Address, ShortDescription, LongDescription, Latitude, Longitude, DecisionDate, NumberOfBedrooms, NumberOfBathrooms, MinimumRent, MaximumRent, ClassificationID (FK).
+RENTER_AMENITY
+Attributes: RenterID (PK, FK), AmenityID (PK, FK).
+RENTER_PROPERTY
+Attributes: RenterID (PK, FK), PropertyID (PK, FK).
+AGENT
+Attributes: AgentID (PK), FirstName, LastName, Email, Phone, IsActive, PackageID (FK).
+AGENT_PACKAGE
+Attributes: PackageID (PK), PackageName, PackageDescription, PaymentOption.
+PROPERTY_AGENT
+Attributes: PropertyID (PK, FK), AgentID (PK, FK).
+OFFER
+Attributes: OfferID (PK), AgentID (FK), RenterID (FK), PropertyID (FK), OfferDescription, ExpirationDate, OfferStatus.
+
+
+ Property 0 or 1 Classification; Class 0 or many Properties
+Renter 0 or 1 Class; Class 0 or many Renters
+Prop 0 or many Prop_Amenity; all are 1 Property
+Amenity 0 or many Prop_Amenity; all one Amenity
+Renter 0 or many Renter_Amenity; all one Renter
+Amenity 0 or many Renter_Amenity; all one Amenity
+Renter 0 or many Renter_Prop; all one Renter
+Prop 0 or many Renter_Prop; all one Prop
+Agent_Pack 0 or many Agents; all one Agent_Pack
+Prop 0 or many Prop_Agents; all one Prop
+Agent 0 or many Prop_Agents; all one Agent
+Agent 0 or many Offers; Offer belongs to one Agent
+Renter 0 or many Offers; Offer belongs to one Renter
+Prop 0 or many Offers; Offer set one Prop
+
+[MPLSRenterER.docx](https://github.com/user-attachments/files/34568436/MPLSRenterER.docx)
+
