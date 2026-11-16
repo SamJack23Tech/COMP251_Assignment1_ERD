@@ -65,3 +65,86 @@ Once you have completed both of the items above, you will need to submit the lin
 - [Make a ReadMe file Web-based Editor](https://www.makeareadme.com/)
 - [Draw.io Web-based diagramming tool](https://app.diagrams.net/)
 - [Creating Entity Relationship Diagrams using Draw.io](https://www.youtube.com/watch?v=lAtCySGDD48)
+
+
+**<ins>RELATIONSHIP</ins>**
+
+A **PROPERTY** can <ins>have many</ins> **AMENITIES**
+
+An **AMENITY** can <ins>belong to many</ins> **PROPERTIES**
+
+A **RENTER** can <ins>select many</ins> **AMENTITES**
+
+An **AMENITY** can be <ins>selected by many</ins> **RENTERS**
+
+A **RENTER** can <ins>receive one </ins> **CLASSIFICATION**
+
+A **CLASSFICATION** can be <ins>assigned to many</ins> **RENTERS**
+
+A **PROPERTY** can <INS>receive one </INS>  **CLASSFICATION**
+
+A **CLASSIFICATION** can be <ins>assigned to many</ins> **PROPERTIES**
+
+A **RENTER** can <ins>add many</ins> **PROPERTIES**
+
+A **PROPERTY**can be <ins>added to many</ins> **RENTER**
+
+A **PROPERTY** can <ins>have many</ins> **PROPERTY AGENTS**
+
+A **PROPERTY AGENT** can be <ins>associated with one or more</ins> **PROPERTIES**
+
+A **PROPERTY AGENT** <ins>must have one</ins> **AGENT PACKAGE**
+
+An **AGENT PACKAGE** can be selected by <ins>one or more</ins> **PROPERTY AGENT**
+
+A **PROPERTY AGENT** can <ins>have zero or more</ins> **OFFERS**
+
+An **OFFER** must be made <ins>by only one</ins> **PROPERTY AGENT**
+
+A **RENTER** can <ins>receive zero or more</ins> **OFFERS**
+
+An **OFFER** must be <ins>received by one</ins> **RENTER**
+
+**<ins>ASSUMPTIONS</ins>**
+
+Can a property have multiple amenities? **YES**
+
+Can an amenity be in multiple properties? **YES**
+
+Can a property exist without amenities? **YES**
+
+Can a renter select multiple amenities? **YES**
+
+Can amenities be selected by multiple renters? **Yes**
+
+Can a renter not select amenities? **YES**
+
+Can multiple renters share the same classification? **YES**
+
+Can a renter receive one classification?  **YES**
+
+Can a renter exist without a classification? **YES**
+
+Can multiple properties share the same classification? **YES**
+
+Can a property receive one classification? **YES**
+
+Can a renter add multiple properties? **YES**
+
+Can multiple renters add the same properties? **YES**
+
+Can a property have many property agents? **YES**
+
+Can a property agent have 0 or more properties? **YES**
+
+Can every property agent have an agent package?  **YES**
+
+Can a property agent have an agent package? **YES**
+
+Can a property agent have zero or more offers? **YES**
+
+Can an offer have only one  property agent? **YES**
+
+Can a renter receive zero or more offers **YES**
+
+Can an offer be received by one renter? **YES**
