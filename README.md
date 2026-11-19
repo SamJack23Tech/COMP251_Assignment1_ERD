@@ -87,6 +87,12 @@ A **CLASSIFICATION** can be <ins>assigned to many</ins> **PROPERTIES**
 
 A **RENTER** can <ins>add many</ins> **PROPERTIES**
 
+**PROSPECTIVERENTERS** can <ins>only have one</ins> **RENTER**
+
+**RENTER** there can <ins>only be one</ins> **PROSPECTIVERENTER**
+
+**PROSPECTIVERENTERS** can want <ins>one or more</ins> **AMENITIES**
+
 A **PROPERTY**can be <ins>added to many</ins> **RENTER**
 
 A **PROPERTY** can <ins>have many</ins> **PROPERTY AGENTS**
